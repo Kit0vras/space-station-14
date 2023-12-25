@@ -88,8 +88,8 @@
     sprite: Clothing/Head/Hardsuits/engineering-white.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/engineering-white.rsi
-  - type: PointLight
-    color: "#daffad"
+  - type: PointLight # Corvax-Resprite
+    color: "#e6aa5c"
   - type: PressureProtection
     highPressureMultiplier: 0.72
     lowPressureMultiplier: 1000
@@ -220,7 +220,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/security-warden.rsi
   - type: PointLight
-    color: "#ffeead"
+    color: cyan # Corvax-Resprite
   - type: PressureProtection
     highPressureMultiplier: 0.525
     lowPressureMultiplier: 1000
@@ -303,8 +303,8 @@
     sprite: Clothing/Head/Hardsuits/rd.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/rd.rsi
-  - type: PointLight
-    color: "#d6adff"
+  - type: PointLight # Corvax-Resprite
+    color: "#a4fef4"
   - type: PressureProtection
     highPressureMultiplier: 0.60
     lowPressureMultiplier: 1000
@@ -503,6 +503,47 @@
 
 #Wizard Hardsuit
 - type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitWizard
+  name: wizard hardsuit helmet
+  description: A bizarre gem-encrusted helmet that radiates magical energies.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/wizard.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/wizard.rsi
+  - type: PointLight
+    color: "#a4fef4" # Corvax-Resprite
+  - type: PressureProtection
+    highPressureMultiplier: 0.27
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+#Organic Space Suit
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitLing
+  name: organic space helmet
+  description: A spaceworthy biomass of pressure and temperature resistant tissue.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Clothing/Head/Hardsuits/lingspacehelmet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hardsuits/lingspacehelmet.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.225
+    lowPressureMultiplier: 1000
+
+#Pirate EVA Suit (Deep Space EVA Suit)
+- type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitPirateEVA
   name: deep space EVA helmet
@@ -563,7 +604,14 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertengineer.rsi
   - type: PointLight
-    color: "#f4ffad"
+    color: cyan # Corvax-Resprite
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieElite
@@ -591,7 +639,14 @@
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertsecurity.rsi
   - type: PointLight
-    color: "#ffadc6"
+    color: cyan # Corvax-Resprite
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
@@ -632,7 +687,7 @@
       - state: equipped-head-unshaded
         shader: unshaded
   - type: PointLight
-    color: orange
+    color: "#a4fef4" # Corvax-Resprite
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
@@ -710,6 +765,8 @@
     sprite: Clothing/Head/Hardsuits/mime.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/mime.rsi
+  - type: PointLight # Corvax-Resprite
+    color: "#ff3399"
 
 #Santas Hardsuit
 - type: entity
