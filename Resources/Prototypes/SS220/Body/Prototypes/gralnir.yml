@@ -1,0 +1,50 @@
+﻿- type: body
+  name: "gralnir"
+  id: Gralnir
+  root: torso
+  slots:
+    head:
+      part: HeadGralnir
+      connections:
+      - torso
+      organs:
+        brain: OrganGralnirBrain
+        eyes: OrganGralnirEyes
+    torso:
+      part: TorsoGralnir
+      organs:
+        chitin: OrganGralnirChitin
+        heart: OrganGralnirHeart
+        lungs: OrganGralnirLungs
+        stomach: OrganGralnirStomach
+        liver: OrganGralnirLiver
+        kidneys: OrganGralnirKidneys
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmGralnir
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmGralnir
+      connections:
+      - left hand
+    right hand:
+      part: RightHandGralnir
+    left hand:
+      part: LeftHandGralnir
+    right leg:
+      part: RightLegGralnir
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegGralnir
+      connections:
+      - left foot
+    right foot:
+      part: RightFootGralnir
+    left foot:
+      part: LeftFootGralnir

@@ -1,3 +1,7 @@
 - type: metabolizerType
   id: Hydroponic
   name: Hydroponic
+
+- type: metabolizerType
+  id: Gralnir
+  name: gralnir

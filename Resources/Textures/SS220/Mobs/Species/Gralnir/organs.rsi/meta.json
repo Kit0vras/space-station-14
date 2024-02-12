@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Kit0vras (Github) for SS220",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "heart-off"
+    },
+    {
+      "name": "heart-on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "lung-l"
+    },
+    {
+      "name": "lung-r"
+    },
+    {
+      "name": "kidney-l"
+    },
+    {
+      "name": "kidney-r"
+    },
+    {
+      "name": "liver"
+    },
+    {
+      "name": "stomach"
+    },
+    {
+      "name": "chitin"
+    },
+    {
+      "name": "sphere"
+    },
+    {
+      "name": "sphere-overlay-1"
+    },
+    {
+      "name": "sphere-overlay-2"
+    },
+    {
+      "name": "sphere-overlay-3"
+    },
+    {
+      "name": "sphere-overlay-4"
+    },
+    {
+      "name": "sphere-overlay-5"
+    },
+    {
+      "name": "sphere-overlay-6"
+    },
+    {
+      "name": "sphere-overlay-7"
+    },
+    {
+      "name": "sphere-overlay-8"
+    },
+    {
+      "name": "sphere-overlay-9"
+    }
+  ]
+}

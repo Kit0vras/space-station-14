@@ -1,0 +1,13 @@
+- type: entity
+  save: false
+  name: Урист МакГраль
+  parent: BaseMobGralnir
+  id: MobGralnir
+  components:
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 2.0
+    damageRecovery:
+      types:
+        Asphyxiation: -0.5

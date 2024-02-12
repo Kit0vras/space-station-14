@@ -1,0 +1,212 @@
+﻿- type: entity
+  id: BaseGralnirOrgan
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: SS220/Mobs/Species/Gralnir/organs.rsi
+  - type: Organ
+
+- type: entity
+  id: OrganGralnirBrain
+  parent: BaseGralnirOrgan
+  name: сфера разума
+  description: Загадочная сфера, содержащая в себе разум Гральнира.
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: sphere
+    - map: [ "overlay" ]
+      state: sphere-overlay-1
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: sphere
+  - type: RandomSprite
+    getAllGroups: true
+    available:
+    - enum.DamageStateVisualLayers.Base:
+        sphere: Sixteen #Рандомизация цвета сферы в зависимости от выбранной палитры
+    - overlay:
+        sphere-overlay-1: Sixteen
+        sphere-overlay-2: Sixteen
+        sphere-overlay-3: Sixteen
+        sphere-overlay-4: Sixteen
+        sphere-overlay-5: Sixteen
+        sphere-overlay-6: Sixteen
+        sphere-overlay-7: Sixteen
+        sphere-overlay-8: Sixteen
+        sphere-overlay-9: Sixteen
+#  - type: Item
+#    size: Normal
+#    sprite: Objects/Fun/toys.rsi
+#    heldPrefix: orb
+  - type: Organ
+  - type: Brain
+  - type: MindContainer
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: white
+  - type: Examiner
+  - type: BlockMovement
+  - type: Input
+    context: "human"
+  - type: Speech
+  - type: Actions
+  - type: Emoting
+  - type: Grammar
+    attributes:
+      proper: true
+  - type: DoAfter
+  - type: MobState
+    allowedStates:
+      - Alive
+  - type: Tag
+    tags:
+      - MindTransferTarget
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+          - !type:PlaySoundBehavior
+            sound:
+              collection: WindowShatter
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              ShardGlassReinforced:
+                min: 1
+                max: 5
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: TTS
+    voice: sentrybot #металлический голос
+
+- type: entity
+  id: OrganGralnirStomach
+  parent: OrganHumanStomach
+  name: stomach
+  description: "Gross. This is hard to stomach."
+  components:
+  - type: Sprite
+    sprite: SS220/Mobs/Species/Gralnir/organs.rsi
+    state: stomach
+  - type: Stomach
+    updateInterval: 2.0
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [Gralnir]
+    updateFrequency: 2.0
+
+- type: entity
+  id: OrganGralnirLungs
+  parent: BaseGralnirOrgan
+  name: lungs
+  description: "Filters oxygen from an atmosphere... just more greedily."
+  components:
+  - type: Sprite
+    layers:
+      - state: lung-l
+      - state: lung-r
+  - type: Lung
+  - type: Metabolizer
+    updateFrequency: 2.0
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ Human ]
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      Lung:
+        maxVol: 100.0
+        canReact: false
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+
+- type: entity
+  id: OrganGralnirHeart
+  parent: BaseGralnirOrgan
+  name: heart
+  description: "A disgustingly persistent little biological pump made for spiders."
+  components:
+  - type: Sprite
+    state: heart-on
+  - type: Metabolizer
+    updateFrequency: 2.0
+    maxReagents: 2
+    metabolizerTypes: [Gralnir]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
+
+- type: entity
+  id: OrganGralnirLiver
+  parent: BaseGralnirOrgan
+  name: liver
+  description: "Pairing suggestion: chianti and fava beans."
+  noSpawn: true
+  components:
+  - type: Sprite
+    state: liver
+  - type: Metabolizer # The liver metabolizes certain chemicals only, like alcohol.
+    updateFrequency: 2.0
+    maxReagents: 1
+    metabolizerTypes: [Gralnir]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.2 # removes alcohol very slowly along with the stomach removing it as a drink
+
+- type: entity
+  id: OrganGralnirKidneys
+  parent: BaseGralnirOrgan
+  name: kidneys
+  description: "Filters toxins from the bloodstream."
+  noSpawn: true
+  components:
+  - type: Sprite
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  # The kidneys just remove anything that doesn't currently have any metabolisms, as a stopgap.
+  - type: Metabolizer
+    updateFrequency: 2.0
+    maxReagents: 4
+    metabolizerTypes: [Gralnir]
+    removeEmpty: true
+
+- type: entity
+  id: OrganGralnirEyes
+  parent: BaseGralnirOrgan
+  name: eyes
+  description: "Two was already too many."
+  components:
+  - type: Sprite
+    layers:
+      - state: eyeball-l
+      - state: eyeball-r
+
+- type: entity
+  id: OrganGralnirChitin
+  parent: BaseGralnirOrgan
+  name: chitin
+  description: "A fleshy muscle mostly used for lying."
+  components:
+  - type: Sprite
+    state: chitin

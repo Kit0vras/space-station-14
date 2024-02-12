@@ -1,0 +1,174 @@
+- type: species
+  id: Gralnir
+  name: species-name-gralnir
+  roundStart: true
+  prototype: MobGralnir
+  sprites: MobGralnirSprites
+  defaultSkinTone: "#474A51"
+  markingLimits: MobGralnirMarkingLimits
+  dollPrototype: MobGralnirDummy
+  skinColoration: Hues
+  maleFirstNames: names_gralnir_male_first
+  femaleFirstNames: names_gralnir_female_first
+  maleLastNames: names_gralnir_last
+  femaleLastNames: names_gralnir_last
+  naming: FirstLast
+  buttScanTexture: /Textures/SS220/Interface/Butts/gralnir.png
+  blockedJobs:
+    - CentralCommandOfficial #Командование и главы
+    - Captain
+    - BlueShield
+    - HeadOfPersonnel
+    - Quartermaster
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - ResearchDirector
+    - HeadOfSecurity
+    - Warden
+    - Chemist #"Умственно сложные" работы
+    - Detective
+    - Lawyer
+
+- type: speciesBaseSprites
+  id: MobGralnirSprites
+  sprites:
+    Head: MobGralnirHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobGralnirTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobGralnirEyes
+    LArm: MobGralnirLArm
+    RArm: MobGralnirRArm
+    LHand: MobGralnirLHand
+    RHand: MobGralnirRHand
+    LLeg: MobGralnirLLeg
+    RLeg: MobGralnirRLeg
+    LFoot: MobGralnirLFoot
+    RFoot: MobGralnirRFoot
+
+- type: markingPoints
+  id: MobGralnirMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Tail:
+      points: 0
+      required: false
+    Snout:
+      points: 0
+      required: false
+    HeadTop:
+      points: 0
+      required: false
+    HeadSide:
+      points: 0
+      required: false
+    Chest:
+      points: 0
+      required: false
+    Legs:
+      points: 0
+      required: false
+    Arms:
+      points: 0
+      required: false
+    Overlay:
+      points: 0
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobGralnirHead
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobGralnirEyes
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobGralnirHeadMale
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobGralnirHeadFemale
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobGralnirTorso
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobGralnirTorsoMale
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobGralnirTorsoFemale
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobGralnirLLeg
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobGralnirLHand
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobGralnirLArm
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobGralnirLFoot
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobGralnirRLeg
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobGralnirRHand
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobGralnirRArm
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobGralnirRFoot
+  baseSprite:
+    sprite: /Textures/SS220/Mobs/Species/Gralnir/parts.rsi
+    state: r_foot
