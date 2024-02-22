@@ -61,6 +61,7 @@
   - type: Vocal
     sounds:
       Male: MaleEvil
+      Female: FemaleEvil
       Unsexed: MaleEvil
   #ss220 special_sounds end
 
@@ -269,6 +270,8 @@
   - type: IngestionBlocker
   - type: Item
     storedRotation: -90
+  - type: IdentityBlocker
+    coverage: MOUTH
 
 - type: entity
   parent: ClothingMaskBase
@@ -483,6 +486,7 @@
   - type: Clothing
     sprite: Clothing/Mask/neckgaiter.rsi
   - type: IdentityBlocker
+    coverage: MOUTH
   - type: Tag
     tags:
     - WhitelistChameleon

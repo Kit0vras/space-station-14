@@ -8,6 +8,14 @@
 # WallSolid: Window
 # Table: null
 
+# 2024-02-15 - SS220
+BaseReagentsCapsule: null
+ReagentsCapsuleInjector: ChemicalImplanter
+EmptyCapsule: EmptyChemicalImplant
+CombatCapsule: CombatChemicalImplant
+DABCapsule: DABChemicalImplant
+SuicideCapsule: SuicideChemicalImplant
+
 # 2023-07-03
 ClothingHeadHelmetBasic: ClothingHeadHelmetBasic
 ClothingHeadHelmetBasicOld: ClothingHeadHelmetBasic
@@ -196,3 +204,57 @@ ClothingHeadHelmetVoidParamed: null
 
 # 2024-01-19
 DefaultStationBeaconTeslaEngine: null
+
+# 2024-02-06
+AsteroidRockCrab1: AsteroidRock # SS220 asteroid-migration
+
+# 2024-01-28
+FoodBoxDonkpocketGondola: FoodBoxDonkpocketPizza
+
+# 2024-01-31
+HandheldCrewMonitorEmpty: null
+HandheldCrewMonitor: null
+SpyCrewMonitor: null
+SpyCrewMonitorEmpty: null
+SyndiCrewMonitor: null
+SyndiCrewMonitorEmpty: null
+
+# SS220 Readd-Vehicles begin (commented out upstream)
+# SpawnVehicleWheelchair: null
+# SpawnVehicleWheelchairFolded: null
+# VehicleWheelchair: null
+# VehicleWheelchairFolded: null
+# VehicleSecwayStealObjective: null
+# VehicleKeyJanicart: null
+# VehicleKeySecway: null
+# VehicleKeyATV: null
+# VehicleKeySkeleton: null
+# VehicleKeySyndicateSegway: null
+# VehicleKeySkeletonMotorcycle: null
+# VehicleSecway: null
+# VehicleATV: null
+# VehicleSyndicateSegway: null
+# VehicleSkeletonMotorcycle: null
+# VehicleUnicycle: null
+# VehicleUnicycleFolded: null
+# ActionVehicleHorn: null
+# CrateFunATV: null
+# CrateFunSyndicateSegway: null
+# MobTaxiBot: null
+# MobSupplyBot: null
+# SpawnVehicleMotobike: null
+# SpawnVehicleATV: null
+# SpawnVehicleSecway: null
+# SpawnVehicleJanicart: null
+# VehicleJanicart: null
+# VehicleJanicartDestroyed: null
+# SS220 Readd-Vehicles end
+
+# 2024-02-01
+YellowOxygenTank: OxygenTank
+YellowOxygenTankFilled: OxygenTankFilled
+
+#2024-02-16 ss-220 noDeath
+MedicalScannerMachineCircuitboard: null
+CloningPodMachineCircuitboard: null
+CloningConsoleComputerCircuitboard: null

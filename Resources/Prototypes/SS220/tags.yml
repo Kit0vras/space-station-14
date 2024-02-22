@@ -12,3 +12,15 @@
 
 - type: Tag
   id: ReactionCleanable
+
+# READD-VEHICLES
+- type: Tag
+  id: JanicartKeys
+
+- type: Tag
+  id: VehicleKey
+######
+
+# ss220 shlepi
+- type: Tag
+  id: ElWyccoAxe

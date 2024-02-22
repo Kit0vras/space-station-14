@@ -30,7 +30,6 @@ public abstract class SharedActionsSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
 
     public override void Initialize()
     {
@@ -506,6 +505,10 @@ public abstract class SharedActionsSystem : EntitySystem
             if (!action.RaiseOnUser && action.Container != null && !HasComp<MindComponent>(action.Container))
                 target = action.Container.Value;
 
+
+            //SS220 ActionId start
+            actionEvent.ActionId = actionId;
+            //SS220 ActionId end
             RaiseLocalEvent(target, (object) actionEvent, broadcast: true);
             handled = actionEvent.Handled;
         }
