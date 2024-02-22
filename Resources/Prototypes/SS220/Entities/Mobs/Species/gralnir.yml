@@ -13,7 +13,7 @@
         Cold: 0.5
         Bloodloss: 0.5
   - type: Puller
-    needsHands: false
+    needsHands: true
   - type: Thirst
   - type: Sprite
     noRot: true
@@ -83,8 +83,9 @@
     prototype: Gralnir
     requiredLegs: 2
   - type: Inventory
-    speciesId: gralnir
-  - type: LizardAccent
+    templateId: gralnir #Ячейки в интерфейсе
+    speciesId: gralnir #Своя одежда
+  - type: GralnirAccent
   - type: TypingIndicator
     proto: alien
   - type: Speech
@@ -153,9 +154,9 @@
       behaviors:
       - !type:GibBehavior { }
   - type: Butcherable
-    butcheringType: Gibber #Разделывается только гибом
+    butcheringType: Spike
     spawned:
-      - id: FoodMeatSpider
+      - id: FoodMeat
         amount: 5
 
 - type: entity
