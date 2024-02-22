@@ -25,9 +25,10 @@
     - ResearchDirector
     - HeadOfSecurity
     - Warden
-    - Chemist #"Умственно сложные" работы
+    - Chemist #"Умственно сложные" и ответственные работы
     - Detective
     - Lawyer
+    - AtmosphericTechnician
 
 - type: speciesBaseSprites
   id: MobGralnirSprites
