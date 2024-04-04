@@ -9,6 +9,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitBasic
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: basic hardsuit helmet
   description: A basic-looking hardsuit helmet that provides minor protection against most sources of damage.
   components:
@@ -24,6 +25,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitAtmos
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: atmos hardsuit helmet
   description: A special hardsuit helmet designed for working in low-pressure, high thermal environments.
   components:
@@ -63,6 +65,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitEngineering
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: engineering hardsuit helmet
   description: An engineering hardsuit helmet designed for working in low-pressure, high radioactive environments.
   components:
@@ -80,6 +83,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitEngineeringWhite
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: chief engineer's hardsuit helmet
   description: Special hardsuit helmet, made for the chief engineer of the station.
   components:
@@ -97,6 +101,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSalvage
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: salvage hardsuit helmet
   description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
   components:
@@ -139,6 +144,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurity
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
@@ -162,6 +168,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityRed
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: head of security's hardsuit helmet
   description: Security hardsuit helmet with the latest top secret NT-HUD software. Belongs to the HoS.
   components:
@@ -185,6 +192,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitBrigmedic
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: brigmedic hardsuit helmet
   description: The lightweight helmet of the brigmedic hardsuit. Protects against viruses, and clowns.
   components:
@@ -211,6 +219,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitWarden
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: warden's hardsuit helmet
   description: A modified riot helmet. Oddly comfortable.
   components:
@@ -236,6 +245,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitCap
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: captain's hardsuit helmet
   description: Special hardsuit helmet, made for the captain of the station.
   components:
@@ -251,6 +261,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSyndie
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: blood-red hardsuit helmet
   description: An advanced red hardsuit helmet designed for work in special operations.
   components:
@@ -277,6 +288,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitMedical
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: chief medical officer's hardsuit helmet
   description: Lightweight medical hardsuit helmet that doesn't restrict your head movements.
   components:
@@ -295,6 +307,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitRd
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: experimental research hardsuit helmet
   description: Lightweight hardsuit helmet that doesn't restrict your head movements.
   components:
@@ -314,6 +327,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitWizard
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: wizard hardsuit helmet
   description: A bizarre gem-encrusted helmet that radiates magical energies.
   components:
@@ -354,6 +368,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitLuxury #DO NOT MAP - https://github.com/space-wizards/space-station-14/pull/19738#issuecomment-1703486738
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: luxury mining hardsuit helmet
   description: A refurbished mining hardsuit helmet, fitted with satin cushioning and an extra (non-functioning) antenna, because you're that extra.
   components:
@@ -374,6 +389,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSpatio
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: blood-red hardsuit helmet
   description: A heavily armored helmet designed for work in special operations. Property of Gorlex Marauders.
   components:
@@ -408,6 +424,7 @@
 #Blood-red Medic Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
+  noSpawn: true #SS220-no-hardsuit-helmets
   id: ClothingHeadHelmetHardsuitSyndieMedic
   name: blood-red medic hardsuit helmet
   description: An advanced red hardsuit helmet specifically designed for field medic operations.
@@ -427,6 +444,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSyndieCommander
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: syndicate elite helmet
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
   components:
@@ -453,6 +471,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSyndieElite
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: syndicate commander helmet
   description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
@@ -482,6 +501,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase #SS220-syndifix
   id: ClothingHeadHelmetHardsuitCybersun
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: cybersun juggernaut helmet
   description: Made of compressed red matter, this helmet was designed in the Tau chromosphere facility.
   components:
@@ -505,6 +525,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitPirateEVA
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: deep space EVA helmet
   suffix: Pirate
   description: A deep space EVA helmet, very heavy but provides good protection.
@@ -522,6 +543,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitPirateCap
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: pirate captain's hardsuit helmet
   suffix: Pirate
   description: A special hardsuit helmet, made for the captain of a pirate ship.
@@ -540,6 +562,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieCommander
   id: ClothingHeadHelmetHardsuitERTLeader
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: ERT leader hardsuit helmet
   description: A special hardsuit helmet worn by members of an emergency response team.
   components:
@@ -554,6 +577,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitERTEngineer
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: ERT engineer hardsuit helmet
   description: A special hardsuit helmet worn by members of an emergency response team.
   components:
@@ -575,6 +599,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndieElite
   id: ClothingHeadHelmetHardsuitERTMedical
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: ERT medic hardsuit helmet
   description: A special hardsuit helmet worn by members of an emergency response team.
   components:
@@ -589,6 +614,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitERTSecurity
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: ERT security hardsuit helmet
   description: A special hardsuit helmet worn by members of an emergency response team.
   components:
@@ -610,6 +636,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitERTJanitor
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: ERT janitor hardsuit helmet
   description: A special hardsuit helmet worn by members of an emergency response team.
   components:
@@ -625,6 +652,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetCBURN
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: CBURN exosuit helmet
   description: A pressure resistant and fireproof hood worn by special cleanup units.
   components:
@@ -667,6 +695,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase  # Corvax-Resprite
   id: ClothingHeadHelmetHardsuitDeathsquad
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: deathsquad hardsuit helmet
   description: A robust helmet for special operations.
   components:
@@ -695,6 +724,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSecurity
   id: ClothingHeadHelmetHardsuitClown
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: clown hardsuit helmet
   description: A clown hardsuit helmet.
   components:
@@ -716,6 +746,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSecurity
   id: ClothingHeadHelmetHardsuitMime
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: mime hardsuit helmet
   description: A mime hardsuit helmet.
   components:
@@ -731,6 +762,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitSanta
+  noSpawn: true #SS220-no-hardsuit-helmets
   name: Santa's hardsuit helmet
   description: A festive-looking hardsuit helmet that provides the jolly gift-giver protection from low-pressure environments.
   components:
