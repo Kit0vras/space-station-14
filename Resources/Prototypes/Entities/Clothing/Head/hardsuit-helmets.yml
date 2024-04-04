@@ -501,47 +501,6 @@
         Piercing: 0.9
         Heat: 0.9
 
-#Wizard Hardsuit
-- type: entity
-  parent: ClothingHeadHardsuitWithLightBase
-  id: ClothingHeadHelmetHardsuitWizard
-  name: wizard hardsuit helmet
-  description: A bizarre gem-encrusted helmet that radiates magical energies.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/wizard.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/wizard.rsi
-  - type: PointLight
-    color: "#a4fef4" # Corvax-Resprite
-  - type: PressureProtection
-    highPressureMultiplier: 0.27
-    lowPressureMultiplier: 1000
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
-
-#Organic Space Suit
-- type: entity
-  parent: ClothingHeadHardsuitBase
-  id: ClothingHeadHelmetHardsuitLing
-  name: organic space helmet
-  description: A spaceworthy biomass of pressure and temperature resistant tissue.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/lingspacehelmet.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Hardsuits/lingspacehelmet.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.225
-    lowPressureMultiplier: 1000
-
 #Pirate EVA Suit (Deep Space EVA Suit)
 - type: entity
   parent: ClothingHeadHardsuitBase
