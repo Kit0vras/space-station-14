@@ -10,8 +10,13 @@
     sprite: SS220/Clothing/Head/Hardsuits/blueshield.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hardsuits/blueshield.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+      - state: equipped-HELMET-unshaded
+        shader: unshaded
   - type: PointLight
-    color: "#adeeff"
+    color: "#ffeead"
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 10000
