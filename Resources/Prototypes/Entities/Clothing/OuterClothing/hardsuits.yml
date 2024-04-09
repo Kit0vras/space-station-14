@@ -180,6 +180,11 @@
     sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
+    clothingVisuals: #SS220-maxim-suit-fix-start
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded #SS220-maxim-suit-fix-end
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000

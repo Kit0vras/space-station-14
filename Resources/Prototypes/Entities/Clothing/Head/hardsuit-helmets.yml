@@ -141,7 +141,9 @@
       head:
       - state: equipped-head
       - state: equipped-head-unshaded
-        shader: unshaded #SS220-maxim-suit-fix-end
+        shader: unshaded
+  - type: PointLight
+    color: "#a4fef4" #SS220-maxim-suit-fix-end
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
