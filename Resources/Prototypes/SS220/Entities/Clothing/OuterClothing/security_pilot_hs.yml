@@ -9,6 +9,11 @@
     sprite: SS220/Clothing/OuterClothing/Hardsuits/security_pilot.rsi
   - type: Clothing
     sprite: SS220/Clothing/OuterClothing/Hardsuits/security_pilot.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000

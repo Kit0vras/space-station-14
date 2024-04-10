@@ -10,6 +10,11 @@
     sprite: SS220/Clothing/Head/Hardsuits/security_pilot.rsi
   - type: Clothing
     sprite: SS220/Clothing/Head/Hardsuits/security_pilot.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+      - state: equipped-HELMET-unshaded
+        shader: unshaded
   - type: PointLight
     color: "#ffeead"
     radius: 4.5
