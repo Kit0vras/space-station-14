@@ -35,10 +35,18 @@
   itemDrop: FloorTileItemDarkReinforced
   heatCapacity: 10000
 
+############## Стальной технический пол
+
 - type: tile
-  id: FloorTechMaintMono
-  name: стальной технический моно пол
+  id: FloorTechSteelMaintMono
+  name: технический стальной моно пол
   sprite: /Textures/SS220/Tiles/steel_maint_mono.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -48,9 +56,197 @@
   heatCapacity: 10000
 
 - type: tile
+  id: FloorTechSteelMaintMonoVertical
+  name: технический стальной вертикальный моно пол
+  sprite: /Textures/SS220/Tiles/steel_maint_mono_vertical.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelMaintMonoHorizontal
+  name: технический стальной горизонтальный моно пол
+  sprite: /Textures/SS220/Tiles/steel_maint_mono_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelMaintMono
+  name: технические стальные мини-плиты
+  sprite: /Textures/SS220/Tiles/steel_maint_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelMaintDrain
+  name: технический стальной пол с вертикальной решёткой
+  sprite: /Textures/SS220/Tiles/steel_maint_drain.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelMaintDrainHorizontal
+  name: технический стальной пол с горизонтальной решёткой
+  sprite: /Textures/SS220/Tiles/steel_maint_drain_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechSteelMaintDrainMiddle
+  name: технический стальной пол с центральной решёткой
+  sprite: /Textures/SS220/Tiles/steel_maint_drain_middle.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+################### Технический пол
+
+- type: tile
+  id: FloorTechMaintMono
+  name: технический моно пол
+  sprite: /Textures/SS220/Tiles/tech_maint_mono.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintMonoVertical
+  name: технический вертикальный моно пол
+  sprite: /Textures/SS220/Tiles/tech_maint_mono_vertical.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintMonoHorizontal
+  name: технический горизонтальный моно пол
+  sprite: /Textures/SS220/Tiles/tech_maint_mono_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintMini
+  name: технические мини-плиты
+  sprite: /Textures/SS220/Tiles/tech_maint_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaint
+  heatCapacity: 10000
+
+- type: tile
   id: FloorTechMaintDrain
   name: технический пол с вертикальной решёткой
   sprite: /Textures/SS220/Tiles/tech_maint_drain.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -63,6 +259,12 @@
   id: FloorTechMaintDrainHorizontal
   name: технический пол с горизонтальной решёткой
   sprite: /Textures/SS220/Tiles/tech_maint_drain_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -75,6 +277,12 @@
   id: FloorTechMaintDrainMiddle
   name: технический пол с центральной решёткой
   sprite: /Textures/SS220/Tiles/tech_maint_drain_middle.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -82,6 +290,136 @@
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaint
   heatCapacity: 10000
+
+################## Технический решётчатый пол
+
+- type: tile
+  id: FloorTechMaintGratingMono
+  name: технический решетчатый моно пол
+  sprite: /Textures/SS220/Tiles/grating_maint_mono.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingMonoVertical
+  name: технический решетчатый вертикальный моно пол
+  sprite: /Textures/SS220/Tiles/grating_maint_mono_vertical.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingMonoHorizontal
+  name: технический решетчатый горизонтальный моно пол
+  sprite: /Textures/SS220/Tiles/grating_maint_mono_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingMini
+  name: технические решетчатые мини-плиты
+  sprite: /Textures/SS220/Tiles/grating_maint_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingDrain
+  name: технический решетчатый пол с вертикальной решёткой
+  sprite: /Textures/SS220/Tiles/grating_maint_drain.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingDrainHorizontal
+  name: технический решетчатый пол с горизонтальной решёткой
+  sprite: /Textures/SS220/Tiles/grating_maint_drain_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTechMaintGratingDrainMiddle
+  name: технический решетчатый пол с центральной решёткой
+  sprite: /Textures/SS220/Tiles/grating_maint_drain_middle.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+####################
 
 - type: tile
   id: FloorDutch
@@ -843,7 +1181,7 @@
   - 1.0
   - 1.0
   - 1.0
-  - 1.09
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -864,7 +1202,7 @@
   - 1.0
   - 1.0
   - 1.0
-  - 1.09
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:

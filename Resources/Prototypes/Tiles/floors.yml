@@ -604,6 +604,12 @@
   id: FloorTechMaint
   name: tiles-techmaint-floor
   sprite: /Textures/Tiles/tech_maint.png
+  variants: 4 #SS220-Tile-Resprite-2025-start
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 #SS220-Tile-Resprite-2025-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -730,6 +736,12 @@
   id: FloorMining
   name: tiles-mining-tile
   sprite: /Textures/Tiles/mining_floor.png
+  variants: 4 #SS220-Tile-Resprite-2025-start
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 #SS220-Tile-Resprite-2025-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -742,6 +754,12 @@
   id: FloorMiningDark
   name: tiles-mining-dark-tile
   sprite: /Textures/Tiles/mining_floor_dark.png
+  variants: 4 #SS220-Tile-Resprite-2025-start
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 #SS220-Tile-Resprite-2025-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -754,6 +772,12 @@
   id: FloorMiningLight
   name: tiles-mining-light-tile
   sprite: /Textures/Tiles/mining_floor_light.png
+  variants: 4 #SS220-Tile-Resprite-2025-start
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0 #SS220-Tile-Resprite-2025-end
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
