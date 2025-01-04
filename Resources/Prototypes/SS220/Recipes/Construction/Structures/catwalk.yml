@@ -217,3 +217,135 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+
+- type: construction
+  name: mining directional catwalk
+  id: MiningDirectionalCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningDirectionalCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_directional
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  name: mining middle catwalk
+  id: MiningMiddleCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningMiddleCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_middle
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  name: mining directional dark catwalk
+  id: MiningDirectionalDarkCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningDirectionalDarkCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_directional_dark
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  name: mining middle dark catwalk
+  id: MiningMiddleDarkCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningMiddleDarkCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_middle_dark
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  name: mining directional light catwalk
+  id: MiningDirectionalLightCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningDirectionalLightCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_directional_light
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  name: mining middle light catwalk
+  id: MiningMiddleLightCatwalk
+  graph: MiningCatwalk
+  startNode: start
+  targetNode: MiningMiddleLightCatwalk
+  category: construction-category-structures
+  description: Just like a lattice. Except it looks better.
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  icon:
+    sprite: SS220/Structures/Catwalks/catwalkmining.rsi
+    state: mining_middle_light
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false

@@ -92,7 +92,7 @@
   heatCapacity: 10000
 
 - type: tile
-  id: FloorTechSteelMaintMono
+  id: FloorTechSteelMaintMini
   name: технические стальные мини-плиты
   sprite: /Textures/SS220/Tiles/steel_maint_mini.png
   variants: 4
@@ -417,6 +417,390 @@
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGratingMaint
+  heatCapacity: 10000
+
+#################### Шахтёрский пол
+
+- type: tile
+  id: FloorMiningMono
+  name: Шахтёрская моно плитка
+  sprite: /Textures/SS220/Tiles/mining_mono.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGrating
+  name: Шахтёрская решётчатая плитка
+  sprite: /Textures/SS220/Tiles/mining_grating.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingHorizontal
+  name: Шахтёрская решётчатая горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingMiddle
+  name: Шахтёрская решётчатая центральная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_middle.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirected
+  name: Шахтёрская решётчатая направленная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirectedHorizontal
+  name: Шахтёрская решётчатая направленная горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed_horizontal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningReinforced
+  name: Шахтёрская укреплённая плитка
+  sprite: /Textures/SS220/Tiles/mining_reinforced.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMining
+  heatCapacity: 10000
+
+#################### Шахтёрский тёмный пол
+
+- type: tile
+  id: FloorMiningMonoDark
+  name: Шахтёрская тёмная моно плитка
+  sprite: /Textures/SS220/Tiles/mining_mono_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDark
+  name: Шахтёрская тёмная решётчатая плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingHorizontalDark
+  name: Шахтёрская тёмная решётчатая горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_horizontal_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingMiddleDark
+  name: Шахтёрская тёмная решётчатая центральная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_middle_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirectedDark
+  name: Шахтёрская тёмная решётчатая направленная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirectedHorizontalDark
+  name: Шахтёрская тёмная решётчатая направленная горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed_horizontal_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningReinforcedDark
+  name: Шахтёрская тёмная укреплённая плитка
+  sprite: /Textures/SS220/Tiles/mining_reinforced_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningDark
+  heatCapacity: 10000
+
+#################### Шахтёрский светлый пол
+
+- type: tile
+  id: FloorMiningMonoLight
+  name: Шахтёрская светлая моно плитка
+  sprite: /Textures/SS220/Tiles/mining_mono_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingLight
+  name: Шахтёрская светлая решётчатая плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingHorizontalLight
+  name: Шахтёрская светлая решётчатая горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_horizontal_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingMiddleLight
+  name: Шахтёрская светлая решётчатая центральная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_middle_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirectedLight
+  name: Шахтёрская светлая решётчатая направленная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningGratingDirectedHorizontalLight
+  name: Шахтёрская светлая решётчатая направленная горизонтальная плитка
+  sprite: /Textures/SS220/Tiles/mining_grating_directed_horizontal_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMiningReinforcedLight
+  name: Шахтёрская светлая укреплённая плитка
+  sprite: /Textures/SS220/Tiles/mining_reinforced_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemMiningLight
   heatCapacity: 10000
 
 ####################

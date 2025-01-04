@@ -1,0 +1,32 @@
+{
+	"version": 1,
+	"license": "EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt",
+  "copyright": "Made by Kit0vras (Github) for SS220",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "mining_directional",
+			"directions": 4
+		},
+		{
+			"name": "mining_middle"
+		},
+		{
+			"name": "mining_directional_dark",
+			"directions": 4
+		},
+		{
+			"name": "mining_middle_dark"
+		},
+		{
+			"name": "mining_directional_light",
+			"directions": 4
+		},
+		{
+			"name": "mining_middle_light"
+		}
+	]
+}
